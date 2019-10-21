@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="1" width="100vw" height="100vh"></div>
+    <script>
+      /*  const investors = [
+        { first: "Albert", last: "Einstein", year: 1879, passed: 1955 },
+        { first: "Isaac", last: "Newton", year: 1643, passed: 1727 },
+        { first: "Galileo", last: "Galilei", year: 1564, passed: 1642 },
+        { first: "Marie", last: "Curie", year: 1867, passed: 1934 },
+        { first: "Johannes", last: "Keprel", year: 1571, passed: 1630 },
+        { first: "Nicolaus", last: "Copernicus", year: 1473, passed: 1543 },
+        { first: "Max", last: "Planck", year: 1858, passed: 1947 }
+      ];
+
+      const people = [
+        "Beck, Glen",
+        "Becker, Carl",
+        "Beckett, Samuel",
+        "Beddoes, Mick",
+        "Beecher, Henry",
+        "Beethoven, Ludwig",
+        "Begin, Menachem",
+        "Belloc, Hilare",
+        "Bellow, Saul",
+        "Benchley, Robert",
+        "Benenson, Peter",
+        "Ben-Gurion, David",
+        "Benjamin, Walter",
+        "Benn, Tony",
+        "Bennington, Chester",
+        "Benson, Leana",
+        "Bent, Silas"
+      ]; */
+
+      /* const result = investors.filter(item => {
+        return item.year > 1500;
+      });
+      console.table(result); */
+
+      /* const name = investors.map(item => {
+        return `${item.first}  ${item.last}`;
+      });
+      console.log(name); */
+
+      /* const birthday = investors.sort((a, b) => (a.year > b.year ? 1 : -1));
+      console.table(birthday); */
+
+      /* const howMuch = investors.reduce((a, b) => a + (b.passed - b.year), 0);
+      console.table(howMuch); */
+
+      /* const howLong = investors.sort((a, b) =>
+        a.passed - a.year < b.passed - b.year ? 1 : -1
+      );
+      console.table(howLong); */
+
+      /* const category = document.querySelector(".mw-category");
+      const links = [...category.querySelectorAll("a")];
+
+      const de = links
+        .map(item => item.text)
+      		.filter(item => item.includes("de")); */
+
+      /* const sort = people.sort((a, b) => {
+        const [afirst, alast] = a.split(", ");
+        const [bfirst, blast] = b.split(", ");
+        return alast > blast ? 1 : -1;
+      });
+      console.table(sort); */
+
+      /* const data = [
+        "bike",
+        "bike",
+        "moto",
+        "truck",
+        "car",
+        "truck",
+        "plane",
+        "moto",
+        "plane"
+      ];
+
+      const res = data.reduce((item1, item2) => {
+        if (!item1[item2]) {
+          item1[item2] = 0;
+        }
+        item1[item2]++;
+        return item1;
+      }, {});
+      console.log(res); */
+
+      /*  const companies = [
+        { name: "Company One", category: "Finance", start: 1981, end: 2003 },
+        { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+        { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+        { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
+        {
+          name: "Company Five",
+          category: "Technology",
+          start: 2009,
+          end: 2014
+        },
+        { name: "Company Six", category: "Finance", start: 1987, end: 1996 },
+        { name: "Company Seven", category: "Auto", start: 1986, end: 2016 },
+        {
+          name: "Company Eight",
+          category: "Technology",
+          start: 2011,
+          end: 2010
+        },
+        { name: "Company Nine", category: "Retail", start: 1981, end: 2089 }
+      ];
+
+      const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+      const reduce = ages.reduce((total, age) => {
+        console.log(age);
+      }); */
+
+      /* const posts = [
+        { title: "Post One", body: "This is post one" },
+        { title: "Post Two", body: "This is post two" }
+      ];
+
+      function getPosts() {
+        setTimeout(() => {
+          let output = "";
+          posts.forEach((post, index) => {
+            output += `<li>${post.title}</li>`;
+          });
+          document.body.innerHTML = output;
+        }, 1000);
+      }
+      function createPost(post) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            posts.push(post);
+            const error = false;
+            if (!error) {
+              resolve();
+            } else {
+              reject("Error");
+            }
+          }, 2000);
+        });
+      }
+
+      createPost({ title: "Post Three", body: "This is three" }).then(getPosts); */
+
+      /* const book1 = {
+        title: "Book One",
+        author: "John Doe",
+        year: "2013",
+        getSummary: function() {
+          return `${this.title} was written by ${this.author} in ${this.year}`;
+        }
+      };
+
+      const book2 = {
+        title: "Book Two",
+        author: "Jane Doe",
+        year: "2016",
+        getSummary: function() {
+          return `${this.title} was written by ${this.author} in ${this.year}`;
+        }
+      };
+      console.log(Object.values(book2));
+      console.log(Object.keys(book2)); */
+
+      /* function Book(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.getSummary = function() {
+          return `${this.title} was written by ${this.author} in ${this.year}`;
+        };
+      }
+      Book.prototype.getAge = function() {
+        return new Date().getFullYear() - this.year;
+      };
+
+      const book1 = new Book("Book One", "John Doe", "2013");
+      const book2 = new Book("Book Two", "Jane Doe", "2016");
+      console.log(book1.getAge()); */
+
+      /* function palindrome(str) {
+        str.split(" ") == str.split(" ").reverse() ? str.join(" ") : "bad";
+        // Good luck!
+        return true;
+      }
+
+      palindrome("eye"); */
+
+      const arr = [1, "eye", "hand", 13, "bye", 7, "fuck you", 21, 33];
+
+      /* const str = arr.filter(item => typeof item === "number"); */
+
+      let str = arr
+        .filter(item => typeof item === "string")
+        .toString()
+        .toLowerCase()
+        .split("");
+
+      for (let i = 0; i < str.length; i++) {
+        output = str[i] + `_`;
+        str.push(output);
+      }
+      console.log(str);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <p class="text">hello</p>
+  <script>
+    /* const arr = [1, "eye", "hand", 13, "bye", 7, "fuck you", 21, 33]; */
+
+    /* const str = arr.filter(item => typeof item === "number"); */
+    /*
+      let str = arr.filter(item => typeof item === "string");
+      let res = [...str]; */
+    /* console.log(res.length); */
+    /*  for (let i = 0; i < str.length; i++) {
+        output = str[i] + `_`;
+        str.push(output);
+      } */
+    /* let output = "";
+      for (let i = 0; i < str.length; i++) {
+        str[i].match(/\d/g, "")
+          ? console.log(str[i])
+          : (output += str[i] + `_`);
+      }
+      console.log(output); */
+
+    /* for (let i = 0; i < res.length; i++) {
+        console.log(Object.keys(res[i]));
+        console.log(Object.values(res[i])); */
+    /* console.log(`${res[i]}` + `:` + `${i + 1}`); */
+    /* } */
+    /* for (let item in res) {
+        console.log(`${res[item]}` + `:` + `${item}`);
+      } */
+    /* function sumIt() {
+        let arr = [];
+        while (true) {
+          let res = prompt("Number?", 0);
+          if (res === "" || res === null || !isFinite) break;
+          arr.push(+res);
+        }
+        let sum = 0;
+        for (let item of arr) {
+          sum += item;
+        }
+        return sum;
+      }
+      alert(sumIt()); */
+
+    /* function camelize(str) {
+        str.split("-");
+        str.map((word, index) =>
+          index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+        );
+        str.join("");
+        return str;
+        console.log(str);
+      }
+      camelize("list-style-image"); */
+
+    /*  let arr = [5, 2, 1, -10, 8];
+
+      function filterRangeInPlace(arr) {
+        arr.sort((a, b) => b - a);
+      }
+      //let arr = [5, 3, 8, 1];
+
+      filterRangeInPlace(arr); // удалены числа вне диапазона 1..4
+
+      console.log(arr); // [3, 1] */
+
+    /* function Calculator() {
+        this.methods = {
+          "+": (a, b) => a + b,
+          "-": (a, b) => a - b
+        };
+        this.calculate = function(str) {
+          let split = str.split(" ");
+          a = +split[0];
+          op = split[1];
+          b = +split[2];
+          /*  if (!this.methods[op] || isNaN(a) || isNan(b)) {
+            return Nan;
+          } */
+    /*   return this.methods[op](a, b);
+        };
+        this.addMethod = function(name, func) {
+          this.methods[name] = func;
+        };
+      }
+      let calc = new Calculator();
+
+      alert(calc.calculate("3 + 7")); */
+
+    /* let vasya = { name: "Вася", age: 25 };
+      let petya = { name: "Петя", age: 30 };
+      let masha = { name: "Маша", age: 28 };
+
+      let users = [vasya, petya, masha];
+      let names = users.map(item => item.name);
+      console.log(names); */
+    /*
+      let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+      let petya = { name: "Петя", surname: "Иванов", id: 2 };
+      let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+      let users = [vasya, petya, masha];
+
+      let usersMapped = users.map(item => ({
+        fullName: `${item.name} ${item.surname}`,
+        id: item.id
+      }));
+      /* id=item.id */
+    /* ... ваш код ... */
+    /*
+          usersMapped = [
+            { fullName: "Вася Пупкин", id: 1 },
+            { fullName: "Петя Иванов", id: 2 },
+            { fullName: "Маша Петрова", id: 3 }
+          ]
+          */ /*
+Object.keys(usersMapped);
+console.table(usersMapped);
+alert(usersMapped[0].id); // 1
+alert(usersMapped[0].fullName); // Вася Пупкин */
+
+    /* let vasya = { name: "Вася", age: 25 };
+      let petya = { name: "Петя", age: 30 };
+      let masha = { name: "Маша", age: 29 };
+
+      let arr = [vasya, petya, masha];
+      let sum = 0;
+      function getAverageAge(str) {
+        return str.reduce((prev, next) => prev + next.age / str.length, 0);
+        //console.log(str[i].age);
+      } */
+
+    //console.log(getAverageAge(arr));
+
+    /* function unique(arr) {
+        let result = [];
+        for (let word of arr) {
+          if (!result.includes(word)) {
+            result.push(word);
+          }
+        }
+        return result;
+      }
+
+      let strings = [
+        "кришна",
+        "кришна",
+        "харе",
+        "харе",
+        "харе",
+        "харе",
+        "кришна",
+        "кришна",
+        ":-O"
+      ];
+
+      alert(unique(strings)); */
+
+    /*  function unique(arr) {
+        return Array.from(new Set(arr));
+      }
+
+      let values = [
+        "Hare",
+        "Krishna",
+        "Hare",
+        "Krishna",
+        "Krishna",
+        "Krishna",
+        "Hare",
+        "Hare",
+        ":-O"
+      ];
+      unique(values);
+      alert(unique(values)); */ // Hare, Krishna, :-O
+
+    /* let arr = [
+       "nap",
+       "teachers",
+       "cheaters",
+       "PAN",
+       "ear",
+       "era",
+       "hectares"
+     ];
+     function aclean(arr) {
+       let word = new Map();
+       for (let item of arr) {
+         let sorted = item
+           .toLowerCase()
+           .split("")
+           .sort()
+           .join("");
+         word.set(sorted, item);
+       }
+       return Array.from(word.values());
+     }
+     alert(aclean(arr)); */
+
+    /* let map = new Map();
+
+     map.set("name", "John");
+
+     let keys = [...map.keys()];
+
+     // Error: keys.push is not a function
+     // Ошибка: keys.push -- это не функция
+     keys.push("more"); */
+    /*
+     let John = [89, 120, 103];
+     let Mike = [116, 94, 123];
+     let Mary = [97, 134, 105];
+
+     let sumJohn = John.reduce((prev, next) => prev + next, 0) / John.length;
+     let sumMike = Mike.reduce((prev, next) => prev + next, 0) / Mike.length;
+     let sumMary = Mary.reduce((prev, next) => prev + next, 0) / Mary.length;
+     console.log(
+       "sumJohn:" + sumJohn,
+       "sumMike:" + sumMike,
+       "sumMary:" + sumMary
+     );
+     switch (true) {
+       case sumJohn > sumMike && sumJohn > sumMary: {
+         console.log("sumJohn:" + sumJohn);
+         break;
+       }
+       case sumMike > sumJohn && sumMike > sumMary: {
+         console.log("sumMike:" + sumMike);
+         break;
+       }
+       case sumMary > sumJohn && sumMary > sumMike: {
+         console.log("sumMary:" + sumMary);
+       }
+       default: {
+         break;
+       }
+     } */
+    /* let arr = [1, 2, 3, 4, 5, 6, 7];
+
+     function inBetween(a, b) {
+       arr.filter(item => item >= a && item <= b);
+       console.log(arr.filter(item => item >= a && item <= b));
+     }
+     inBetween(4, 7);
+
+     function inArray(arr) {
+       return function(x) {
+         return arr.includes(x);
+       };
+     }
+     console.log(arr.filter(inArray([1, 3, 7]))); */
+
+    /* let users = [
+       { name: "John", age: 20, surname: "Johnson" },
+       { name: "Pete", age: 18, surname: "Peterson" },
+       { name: "Ann", age: 19, surname: "Hathaway" }
+     ];
+
+     function byField(field) {
+       return (a, b) => (a[field] > b[field] ? 1 : -1);
+     }
+
+     console.log(users.sort(byField("name"))); */
+
+    /* function makeArmy() {
+       let shooters = [];
+
+       let i = 0;
+       while (i < 10) {
+         let shooter = function() {
+           alert(i); // should show its number
+           shooter.valueOf(); // shooter function
+         };
+         shooters = Array.from(shooter);
+         i++;
+         console.log(shooters);
+       }
+
+       return shooters;
+     }
+
+     let army = makeArmy();
+
+     console.log(army[0]); // the shooter number 0 shows 10
+     console.log(army[5]); // and number 5 also outputs 10...
+     // ... all shooters show 10 instead of their 0, 1, 2, 3... */
+
+    /* function fib(n) {
+       let a = 1;
+       let b = 1;
+       for (let i = 3; i <= n; i++) {
+         let c = a + b;
+         a = b;
+         b = c;
+       }
+       return b;
+     }
+     console.log(fib(7)); */
+    /*
+     let list = {
+       value: 1,
+       next: {
+         value: 2,
+         next: {
+           value: 3,
+           next: {
+             value: 4,
+             next: null
+           }
+         }
+       }
+     };
+
+     function printList(list) {
+       let tmp = list;
+       while (tmp) {
+         alert(tmp.value);
+         tmp = tmp.next;
+         console.log(tmp);
+       }
+     }
+     printList(list); */
+
+    /*  function delay(f, ms) {
+       return function() {
+         setTimeout(() => f.apply(this, arguments), ms);
+       };
+     }
+     let f1000 = delay(alert, 1000);
+     let f1500 = delay(alert, 1500);
+
+     f1000("test"); // показывает "test" после 1000 мс
+     f1500("test"); // показывает "test" после 1500 мс */
+
+    /* Test mission */
+    let S =
+      "You have a long piece of text, and you want to send it to your friend as a series of SMS messages.Your text consists of English letters(uppercase and lowercase) and spaces.The text doesn't contain any leading spaces at the beginning or trailing spaces at the end. There are no two consecutive spaces in the text.";
+
+    function solution(S, K) {
+      let arr = [];
+      let text = S.split(" ");
+      let sum = text.length;
+      let num = Math.floor(text.length / K);
+      let j = num;
+      for (let i = 0, k = 0; num <= sum; i += 1) {
+        let arr = text.slice(`${k}`, `${j}`);
+        text.splice(`${k}`, `${j}`);
+        num += j;
+        localStorage.setItem("messages" + `${i}`, JSON.stringify(arr));
+      }
+    }
+
+    solution(S, 5);
+
+    /* var Jonh = {
+      bill: [124, 48, 268, 180, 42],
+      calcTips: function () {
+        this.tips = [];
+        this.finalPaid = [];
+        for (let i = 0; i < this.bill.length; i++) {
+          console.log(this.bill[i])
+          if (this.bill[i] < 50) {
+            this.tips.push(this.bill[i] * .2)
+            this.finalPaid.push(this.bill[i] + this.tips[i])
+          } else if (this.bill[i] > 50 && this.bill[i] < 200) {
+            this.tips.push(this.bill[i] * .15)
+            this.finalPaid.push(this.bill[i] + this.tips[i])
+          } else if (this.bill[i] > 200) {
+            this.tips.push(this.bill[i] * .1)
+            this.finalPaid.push(this.bill[i] + this.tips[i])
+          }
+
+        }
+
+      }
+    }
+    console.log(Jonh.calcTips())
+    console.log(Jonh) */
+  </script>
+</body>
+
+</html>
